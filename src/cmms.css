@@ -2833,3 +2833,215 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Improve operational readability on Full HD+ desktop displays. */
+@media (min-width: 1900px) {
+  :root {
+    --cmms-sidebar: 260px;
+  }
+
+  .cmms-content {
+    width: min(1660px, 100%);
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  .cmms-sidebar nav button {
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .cmms-sidebar-caption,
+  .cmms-cloud-status span,
+  .cmms-cloud-status small,
+  .cmms-demo-note,
+  .cmms-demo-note span {
+    font-size: 14px;
+  }
+
+  .cmms-cloud-status strong,
+  .cmms-sidebar-bottom > a {
+    font-size: 16px;
+  }
+
+  .cmms-topbar-title h1,
+  .cmms-mobile-page-title h1 {
+    font-size: 22px;
+  }
+
+  .cmms-topbar-title p,
+  .cmms-mobile-page-title p,
+  .cmms-global-search input,
+  .cmms-profile strong,
+  .cmms-primary-button,
+  .cmms-secondary-button {
+    font-size: 16px;
+  }
+
+  .cmms-profile small,
+  .cmms-global-search kbd,
+  .cmms-live-label {
+    font-size: 14px;
+  }
+
+  .cmms-action-banner h2 {
+    font-size: 25px;
+  }
+
+  .cmms-action-banner p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .cmms-kpi {
+    min-height: 122px;
+    padding: 19px;
+  }
+
+  .cmms-kpi span {
+    font-size: 15px;
+  }
+
+  .cmms-kpi strong {
+    font-size: 29px;
+  }
+
+  .cmms-kpi small {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .cmms-panel-heading span {
+    font-size: 13px;
+  }
+
+  .cmms-panel-heading h3 {
+    font-size: 20px;
+  }
+
+  .cmms-panel-heading > button,
+  .cmms-tabs button,
+  .cmms-inline-search input,
+  .cmms-select,
+  .cmms-empty span {
+    font-size: 15px;
+  }
+
+  .cmms-table,
+  .cmms-page-panel > .cmms-table-wrap .cmms-table {
+    font-size: 15px;
+  }
+
+  .cmms-table th {
+    font-size: 13px;
+  }
+
+  .cmms-order-title strong,
+  .cmms-page-panel > .cmms-table-wrap .cmms-order-title strong,
+  .cmms-alert-item strong,
+  .cmms-mini-schedule p strong,
+  .cmms-risk-list p strong,
+  .cmms-detail-list dd,
+  .cmms-modal label,
+  .cmms-modal input,
+  .cmms-modal select,
+  .cmms-modal textarea,
+  .cmms-selected-asset strong {
+    font-size: 15px;
+  }
+
+  .cmms-order-title small,
+  .cmms-cell-sub,
+  .cmms-status,
+  .cmms-priority,
+  .cmms-alert-item p,
+  .cmms-alert-item small,
+  .cmms-mini-schedule p span,
+  .cmms-mini-schedule em,
+  .cmms-health-legend p,
+  .cmms-health-legend > small,
+  .cmms-risk-list p small,
+  .cmms-risk-list em,
+  .cmms-risk-list b {
+    font-size: 13px;
+  }
+
+  .cmms-cell-main,
+  .cmms-assignee,
+  .cmms-due,
+  .cmms-alert-item b,
+  .cmms-asset-stats span,
+  .cmms-sla-panel dl div {
+    font-size: 14px;
+  }
+
+  .cmms-empty strong,
+  .cmms-asset-card h3,
+  .cmms-site-card h3,
+  .cmms-event-main h3,
+  .cmms-report-note h3 {
+    font-size: 18px;
+  }
+
+  .cmms-health-ring strong,
+  .cmms-pm-metrics strong,
+  .cmms-alert-summary strong {
+    font-size: 21px;
+  }
+
+  .cmms-health-ring span,
+  .cmms-progress-ring span,
+  .cmms-pm-metrics span,
+  .cmms-asset-id,
+  .cmms-health-badge,
+  .cmms-asset-card > p,
+  .cmms-asset-card > small,
+  .cmms-asset-card-bottom small,
+  .cmms-asset-card-bottom strong,
+  .cmms-site-card > p,
+  .cmms-site-metrics small,
+  .cmms-site-footer span,
+  .cmms-site-footer button,
+  .cmms-alert-summary small,
+  .cmms-alert-summary > p,
+  .cmms-event-main > div span,
+  .cmms-event-main > div small,
+  .cmms-event-main p,
+  .cmms-event-main > small,
+  .cmms-event-actions > span,
+  .cmms-bar-chart span,
+  .cmms-bar-chart small,
+  .cmms-sla-score span {
+    font-size: 14px;
+  }
+
+  .cmms-pm-layout .cmms-panel-heading h3 {
+    font-size: 21px;
+  }
+
+  .cmms-pm-layout .cmms-panel-heading > button,
+  .cmms-shell:has(.cmms-pm-layout) .cmms-global-search input,
+  .cmms-pm-layout .cmms-pm-item-main h4 {
+    font-size: 17px;
+  }
+
+  .cmms-pm-layout .cmms-pm-item-main p,
+  .cmms-pm-layout .cmms-pm-item-meta strong {
+    font-size: 16px;
+  }
+
+  .cmms-pm-layout .cmms-panel-heading span,
+  .cmms-pm-layout .cmms-pm-metrics span,
+  .cmms-pm-layout .cmms-pm-list time span,
+  .cmms-pm-layout .cmms-pm-list time small,
+  .cmms-pm-layout .cmms-pm-item-main > span,
+  .cmms-pm-layout .cmms-pm-item-meta span,
+  .cmms-pm-layout .cmms-pm-list article > em {
+    font-size: 15px;
+  }
+
+  .cmms-pm-layout .cmms-pm-list article {
+    min-height: 126px;
+  }
+}

@@ -791,3 +791,102 @@
   .iot-live-metrics article:last-child { grid-column: 1 / -1; }
   .iot-drawer { padding: 22px 18px; }
 }
+
+/* Match the CMMS wide-screen reading scale on Full HD+ displays. */
+@media (min-width: 1900px) {
+  .iot-toolbar > div:first-child > span,
+  .iot-toolbar p,
+  .iot-panel-heading > div > span,
+  .iot-panel-heading > small {
+    font-size: 14px;
+  }
+
+  .iot-toolbar h2 {
+    font-size: 22px;
+  }
+
+  .iot-toolbar-actions small,
+  .iot-toolbar-actions button,
+  .iot-filter-group button {
+    font-size: 15px;
+  }
+
+  .iot-kpi {
+    min-height: 122px;
+    padding: 19px;
+  }
+
+  .iot-kpi > span {
+    font-size: 15px;
+  }
+
+  .iot-kpi > strong {
+    font-size: 33px;
+  }
+
+  .iot-kpi > small {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .iot-kpi > em,
+  .iot-range-tabs button {
+    font-size: 12px;
+  }
+
+  .iot-panel-heading h3 {
+    font-size: 20px;
+  }
+
+  .iot-site-list-header,
+  .iot-site-name small,
+  .iot-site-cell small,
+  .iot-live-heading span,
+  .iot-health-badge,
+  .iot-live-metrics span,
+  .iot-live-metrics small,
+  .iot-signal-heading span,
+  .iot-signal-heading small,
+  .iot-site-footer,
+  .iot-asset-heading span,
+  .iot-asset-metric span,
+  .iot-asset-status,
+  .iot-alarm-heading span,
+  .iot-alarm-heading time,
+  .iot-alarm-item p,
+  .iot-alarm-actions span,
+  .iot-drawer-eyebrow,
+  .iot-drawer-subtitle,
+  .iot-current-reading > span,
+  .iot-current-reading > small,
+  .iot-detail-list dt,
+  .iot-detail-list dd,
+  .iot-demo-note {
+    font-size: 14px;
+  }
+
+  .iot-site-name strong,
+  .iot-site-cell strong,
+  .iot-alarm-count,
+  .iot-live-heading strong,
+  .iot-asset-heading strong,
+  .iot-asset-metric strong,
+  .iot-empty,
+  .iot-alarm-item h4,
+  .iot-alarm-meta strong,
+  .iot-chart-head strong {
+    font-size: 15px;
+  }
+
+  .iot-live-metrics strong {
+    font-size: 23px;
+  }
+
+  .iot-drawer h2 {
+    font-size: 23px;
+  }
+
+  .iot-current-reading > strong {
+    font-size: 36px;
+  }
+}

@@ -6,6 +6,10 @@ type Language = "th" | "en";
 const publicAsset = (path: string) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
+const cmmsUrl =
+  import.meta.env.VITE_CMMS_URL ??
+  "https://thaicon-cmms-review.daril186473.chatgpt.site";
+
 const content = {
   th: {
     nav: [
@@ -323,8 +327,10 @@ export default function Home() {
             ))}
             <a
               className="cmms-nav-link"
-              href="#/cmms"
+              href={cmmsUrl}
               onClick={() => setMenuOpen(false)}
+              rel="noreferrer"
+              target="_blank"
             >
               {copy.cmmsLogin}
             </a>

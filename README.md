@@ -5,9 +5,10 @@ Bilingual corporate website for Thai Control Engineering Co., Ltd. with an inter
 ## Routes
 
 - Corporate website: `/thaicon-web-dev/`
-- CMMS prototype: `/thaicon-web-dev/#/cmms`
+- CMMS แยกพัฒนาใน repository `champln/thaicon-cmms`
+- เว็บไซต์บริษัทเชื่อมไปยังระบบ CMMS public ผ่านปุ่ม `CMMS Login`
 
-The CMMS currently uses clearly labelled demo data and local React state. It includes the maintenance dashboard, work orders, PM schedule, asset register, customer sites, IoT alarms, reports, the first interactive work-order workflow, and an IoT Monitoring Center for multi-site device health and telemetry.
+The corporate site is intentionally independent from the operational system, so each product can be deployed and maintained without affecting the other.
 
 ## IoT Monitoring prototype
 

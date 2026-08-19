@@ -316,7 +316,7 @@ export default function Home() {
       <header className="site-header">
         <div className="header-inner">
           <a className="brand" href="#home" aria-label="ThaiCon home">
-            <img src={publicAsset("/brand/thaicon-logo.jpg")} alt="" />
+            <img src={publicAsset("/brand/thaicon-logo-transparent.png")} alt="" />
             <span className="brand-lockup">
               <strong>ThaiCon</strong>
               <small>{copy.companyName}</small>
@@ -693,7 +693,7 @@ export default function Home() {
         <div className="footer-inner">
           <div className="footer-brand">
             <a className="brand" href="#home">
-              <img src={publicAsset("/brand/thaicon-logo.jpg")} alt="" />
+              <img src={publicAsset("/brand/thaicon-logo-transparent.png")} alt="" />
               <span className="brand-lockup">
                 <strong>ThaiCon</strong>
                 <small>Thai Control Engineering</small>

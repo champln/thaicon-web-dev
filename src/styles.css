@@ -76,7 +76,7 @@ a {
   width: 54px;
   height: 54px;
   object-fit: contain;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 .brand-lockup {

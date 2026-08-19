@@ -1414,7 +1414,7 @@ export default function CMMSApp() {
     <main className="cmms-shell">
       <aside className={`cmms-sidebar ${sidebarOpen ? "open" : ""}`}>
         <a className="cmms-brand" href="#/cmms" aria-label="ThaiCon CMMS">
-          <img src={`${import.meta.env.BASE_URL}brand/thaicon-logo.jpg`} alt="" />
+          <img src={`${import.meta.env.BASE_URL}brand/thaicon-logo-transparent.png`} alt="" />
           <span><strong>ThaiCon</strong><small>MAINTENANCE CLOUD</small></span>
         </a>
         <div className="cmms-sidebar-caption">OPERATIONS</div>

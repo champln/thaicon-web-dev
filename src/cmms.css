@@ -61,9 +61,8 @@
 .cmms-brand img {
   width: 42px;
   height: 42px;
-  border-radius: 8px;
   object-fit: contain;
-  background: white;
+  background: transparent;
 }
 
 .cmms-brand span,

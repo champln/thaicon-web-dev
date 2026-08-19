@@ -67,12 +67,9 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  min-width: 190px;
+  min-width: 240px;
   color: var(--brand-blue);
   font-family: Arial, sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: -0.04em;
 }
 
 .brand img {
@@ -80,6 +77,29 @@ a {
   height: 54px;
   object-fit: contain;
   mix-blend-mode: multiply;
+}
+
+.brand-lockup {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+  line-height: 1.1;
+}
+
+.brand-lockup strong {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.brand-lockup small {
+  color: #66758a;
+  font-family: "Anuphan Variable", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  white-space: nowrap;
 }
 
 .main-nav {
@@ -1465,6 +1485,10 @@ footer {
   color: var(--white);
 }
 
+.footer-brand .brand-lockup small {
+  color: #9fb0c5;
+}
+
 .footer-brand .brand img {
   mix-blend-mode: normal;
 }
@@ -1484,8 +1508,19 @@ footer {
 }
 
 .footer-contact strong {
-  margin-bottom: 5px;
   font-size: 13px;
+}
+
+.footer-company-name {
+  display: grid;
+  gap: 2px;
+  margin-bottom: 7px;
+}
+
+.footer-company-name span {
+  color: #9fb0c5;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .footer-contact a {
@@ -1561,6 +1596,10 @@ footer {
   }
 
   .brand {
+    min-width: auto;
+  }
+
+  .brand-lockup strong {
     font-size: 23px;
   }
 
@@ -1740,7 +1779,14 @@ footer {
 
   .brand {
     gap: 6px;
+  }
+
+  .brand-lockup strong {
     font-size: 21px;
+  }
+
+  .site-header .brand-lockup small {
+    display: none;
   }
 
   .brand img {

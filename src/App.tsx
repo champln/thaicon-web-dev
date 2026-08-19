@@ -6,6 +6,11 @@ type Language = "th" | "en";
 const publicAsset = (path: string) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
+const companyIdentity = {
+  english: "Thai Control Engineering",
+  thai: "ไทย คอนโทรล เอ็นจิเนียริ่ง จำกัด",
+};
+
 const content = {
   th: {
     nav: [
@@ -129,7 +134,7 @@ const content = {
     mailNote: "ระบบจะเปิดโปรแกรมอีเมลของคุณ โดยยังไม่ส่งข้อความอัตโนมัติ",
     footerTagline:
       "Engineering • Automation • IoT • AI Energy สำหรับระบบอุตสาหกรรมที่มีประสิทธิภาพ",
-    companyName: "Thai Control Engineering Co., Ltd.",
+    companyName: companyIdentity.thai,
     copyright: "สงวนลิขสิทธิ์",
   },
   en: {
@@ -254,7 +259,7 @@ const content = {
     mailNote: "Your email app will open. Nothing is sent automatically.",
     footerTagline:
       "Engineering • Automation • IoT • AI Energy for efficient industrial systems",
-    companyName: "Thai Control Engineering Co., Ltd.",
+    companyName: companyIdentity.english,
     copyright: "All rights reserved",
   },
 } as const;
@@ -312,7 +317,10 @@ export default function Home() {
         <div className="header-inner">
           <a className="brand" href="#home" aria-label="ThaiCon home">
             <img src={publicAsset("/brand/thaicon-logo.jpg")} alt="" />
-            <span>ThaiCon</span>
+            <span className="brand-lockup">
+              <strong>ThaiCon</strong>
+              <small>{copy.companyName}</small>
+            </span>
           </a>
 
           <nav className={`main-nav ${menuOpen ? "is-open" : ""}`}>
@@ -686,12 +694,18 @@ export default function Home() {
           <div className="footer-brand">
             <a className="brand" href="#home">
               <img src={publicAsset("/brand/thaicon-logo.jpg")} alt="" />
-              <span>ThaiCon</span>
+              <span className="brand-lockup">
+                <strong>ThaiCon</strong>
+                <small>Thai Control Engineering</small>
+              </span>
             </a>
             <p>{copy.footerTagline}</p>
           </div>
           <div className="footer-contact">
-            <strong>{copy.companyName}</strong>
+            <div className="footer-company-name">
+              <strong>{companyIdentity.english}</strong>
+              <span>{companyIdentity.thai}</span>
+            </div>
             <a href="tel:0655014478">065-501-4478</a>
             <a href="mailto:tce.thaicontrol@gmail.com">tce.thaicontrol@gmail.com</a>
           </div>

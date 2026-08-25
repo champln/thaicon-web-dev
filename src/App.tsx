@@ -26,7 +26,6 @@ const content = {
       "ออกแบบ ดูแล และเชื่อมโยงระบบโรงงาน เพื่อประสิทธิภาพที่วัดผลได้",
     primaryCta: "ปรึกษาวิศวกรฟรี",
     secondaryCta: "ดูบริการของเรา",
-    cmmsLogin: "CMMS Login",
     efficiency: "ตัวอย่างข้อมูลจากระบบ",
     monitored: "เครื่องจักรในระบบ",
     serviceSites: "ไซต์งานที่ให้บริการ",
@@ -151,7 +150,6 @@ const content = {
       "We design, maintain and connect industrial systems for measurable efficiency.",
     primaryCta: "Consult an engineer",
     secondaryCta: "Explore services",
-    cmmsLogin: "CMMS Login",
     efficiency: "System data preview",
     monitored: "Connected machines",
     serviceSites: "Service sites",
@@ -329,13 +327,6 @@ export default function Home() {
                 {label}
               </a>
             ))}
-            <a
-              className="cmms-nav-link"
-              href="#/cmms"
-              onClick={() => setMenuOpen(false)}
-            >
-              {copy.cmmsLogin}
-            </a>
           </nav>
 
           <div className="header-actions">

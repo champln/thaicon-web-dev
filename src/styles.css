@@ -145,27 +145,6 @@ html[lang="th"] .main-nav a {
   transform: scaleX(1);
 }
 
-.main-nav .cmms-nav-link {
-  margin-left: -18px;
-  padding: 10px 15px;
-  border: 1px solid rgba(17, 157, 244, 0.32);
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--brand-blue);
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-}
-
-.main-nav .cmms-nav-link::after {
-  display: none;
-}
-
-.main-nav .cmms-nav-link:hover {
-  border-color: var(--cta-blue);
-  background: var(--white);
-}
-
 .header-actions,
 .language-switcher {
   display: flex;
@@ -1645,13 +1624,6 @@ footer {
 
   .main-nav a:last-child {
     border-bottom: 0;
-  }
-
-  .main-nav .cmms-nav-link {
-    margin: 8px 0 0;
-    padding: 13px 14px;
-    border: 1px solid rgba(17, 157, 244, 0.32);
-    text-align: center;
   }
 
   .main-nav a::after {
